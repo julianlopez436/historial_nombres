@@ -1,15 +1,31 @@
 <div class="principal">
-<h2 class="titulo-llamativo"> Bienvenido/a {{nombre_actual}}!!</h2> <br>  
-<h3 class="titulo-llamativo2"> Ingrese su nombre, por favor</h3><br>
-<input [(ngModel)]="nombre_beta" placeholder="ingresar nombre" class="input-llamativo"><br><br>
-<div *ngIf=""></div>
-<button (click)="guardar_nombre()" class="boton-llamativo">actualizar</button><br><br>
-<button (click)="activar_historial=!this.activar_historial" class="boton-llamativo"> activar/desactivar historial</button>
-<div *ngIf="activar_historial==true">
-    <h2>HISTORIAL DE NOMBRES:</h2>
-<ul>
-<li *ngFor="let historial of historial; let i=index;">Nombre {{index_historial[i]}}: {{historial}} 
-</li> 
-</ul>
-</div>
-</div>
+    <h2 class="titulo-llamativo"> Bienvenido/a {{nombre_actual}}!!</h2> <br>  
+    <h3 class="titulo-llamativo2"> Ingrese su nombre, por favor</h3><br>
+    
+    <!-- Input para el nombre -->
+    <input [(ngModel)]="nombre_beta" placeholder="ingresar nombre" class="input-llamativo"><br><br>
+    
+    <!-- Selector para el sexo -->
+    <label for="sexo" class="titulo-llamativo2">Seleccione su sexo:</label><br>
+    <select [(ngModel)]="sexo_beta" class="input-llamativo">
+      <option value="">Seleccionar</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+      <option value="No especificado">No especificado</option>
+    </select><br><br>
+    
+    <!-- Botón para actualizar nombre y sexo -->
+    <button (click)="guardar_nombre()" class="boton-llamativo">Actualizar</button><br><br>
+    
+    <!-- Botón para activar/desactivar historial -->
+    <button (click)="activar_historial=!this.activar_historial" class="boton-llamativo">Activar/Desactivar Historial</button><br><br>
+  
+    <!-- Historial de nombres y sexo -->
+    <div *ngIf="activar_historial==true">
+      <h2>HISTORIAL DE NOMBRES Y SEXO:</h2>
+      <ul>
+        <li *ngFor="let historial of historial; let i=index;">Nombre {{index_historial[i]}}: {{historial}}</li> 
+      </ul>
+    </div>
+  </div>
+  
