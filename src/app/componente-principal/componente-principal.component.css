@@ -1,0 +1,60 @@
+.principal{
+    background-color: aquamarine;
+    color: black;
+}
+div{
+    color: rgb(0, 0, 0);
+    background-color: rgba(9, 186, 106, 0.792);
+}
+.boton-llamativo {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #1da7dd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .boton-llamativo:hover {
+    background-color: #2898b1;
+  }
+  
+  .boton-llamativo:active {
+    background-color: #129a86;
+  }
+
+  .input-llamativo {
+    padding: 9px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid #33f8ff;
+    color: #333;
+    background-color: #acdee6;
+    transition: border-color 0.3s ease;
+  }
+  
+  .titulo-llamativo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #131313;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #e9a3b4, 0 0 20px #fcdee5, 0 0 30px #f7cad5, 0 0 40px #ffdee6, 0 0 50px #ffdee6, 0 0 60px #f1bcc9, 0 0 70px #fbc7d4;
+  }
+  .titulo-llamativo2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
