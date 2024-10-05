@@ -10,6 +10,8 @@ export class ComponentePrincipalComponent {
   nombre_beta: string=''
   index:number=0
   index2:number=0
+  sexo_beta :string =""
+  sexo_actual: string =""
   n:number=0
   historial:string[]=[]
   index_historial:number[]=[]
@@ -20,7 +22,7 @@ export class ComponentePrincipalComponent {
       this.nombre_actual=this.nombre_beta
       this.nombre_beta=''
       this.n =this.n + 1
-      this.historial.push(this.nombre_actual)
+      this.historial.push(this.nombre_actual + " " +this.sexo_beta)
       this.index_historial.push(this.n)
       if(this.index>9 && this.index2>9){
        this.historial.shift()
