@@ -28,15 +28,15 @@ describe('ComponentePrincipalComponent', () => {
 
   it('should update the gender', () => {
     component.nombre_beta = 'Maria';
-    component.sexo_beta = 'Femenino';
+    component.genero_beta2 = 'Femenino';
     component.guardar_nombre();
     expect(component.nombre_actual).toEqual('Maria');
-    expect(component.sexo_actual).toEqual('Femenino');
+    expect(component.genero_actual2).toEqual('Femenino');
   });
 
   it('should add name and gender to history', () => {
     component.nombre_beta = 'Carlos';
-    component.sexo_beta = 'Masculino';
+    component.genero_beta2 = 'Masculino';
     component.guardar_nombre();
     expect(component.historial).toContain('Carlos (Masculino)');
   });
